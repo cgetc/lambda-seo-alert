@@ -77,6 +77,7 @@ celerybeat-schedule
 
 # dotenv
 .env
+.envrc
 
 # virtualenv
 venv/
@@ -87,3 +88,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+project.json
+
+functions/*/*
+!functions/*/_apex_main.py
+!functions/*/requirements.txt
+!functions/*/app/
