@@ -17,7 +17,7 @@ def handle(event, context):
     attachments = []
     for data in result['countPerTypes']:
         count = sum(int(x['count']) for x in data['entries'])
-        if count >= 0:
+        if count > 0:
             attachments.append(gen_attachment(data, count))
 
     if attachments:
